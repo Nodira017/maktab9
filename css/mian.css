@@ -26,7 +26,7 @@ body {
 }
 
 .sm {
-    width: 20%;
+    width: 30%;
 }
 
 .sm a {
@@ -489,7 +489,9 @@ p {
     .news,
     .carousel-indicators,
     .carousel-control-prev,
-    .carousel-control-next {
+    .carousel-control-next,
+    .lang-md,
+    .lang-p {
         display: none!important;
     }
     .carousel-inner {
@@ -596,7 +598,9 @@ p {
     .news,
     .carousel-indicators,
     .carousel-control-prev,
-    .carousel-control-next {
+    .carousel-control-next,
+    .lang-p,
+    .lang-md {
         display: none!important;
     }
     .carousel-inner {
