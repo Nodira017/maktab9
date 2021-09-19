@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff</title>
+    <title>Наш персонал</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mian.css">
     <link rel="stylesheet" href="css/bootstrap.minn.css">
@@ -19,6 +19,19 @@
         .linkk a {
             text-decoration: none;
         }
+        
+        .welltxt {
+            padding-left: 20px;
+        }
+        
+        .welltxt p {
+            margin: 0px;
+        }
+        
+        .wc-item img {
+            width: 229px !important;
+            height: 251px !important;
+        }
     </style>
 </head>
 
@@ -31,17 +44,17 @@
                     <div id="fcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="carimg"><img src="img/1boyclass.jpg" alt=""></div>
+                                <div style="width: 100%;"><img src="img/staff/staf.jpg" alt=""></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- //menu -->
+            <!-- menu -->
             <div class="row row-menu">
                 <div id="menu-top" class="col-md-10 col-sm-10 col-xs-10 offset-1 d-flex justify-content-between align-center menu-1 pt-1">
                     <div id="socialmedia" class="sm d-flex align-items-center">
-                        <span class="text-light">Follow us</span>
+                        <span class="text-light">Cоциальная сеть</span>
                         <ul class="nav">
                             <li class="nav-item ps-3 pe-1">
                                 <a href="#" class="nav-link">
@@ -58,20 +71,30 @@
                                     <div><img src="img/white instagram icon.png" alt=""></div>
                                 </a>
                             </li>
+                            <li class="nav-item px-2 lang-p">
+                                <p class="text-warning" style="font-size: 20px; padding: 0px; margin: 0px"> | </p>
+                            </li>
+                            <li class="nav-item px-2">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                    <a href="#" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="menu">
                         <ul id="navtop" class="nav">
                             <li class="nav-item">
-                                <a href="#news&events" class="nav-link text-light">News & events</a>
+                                <a href="#news&events" class="nav-link text-light">Новости и события</a>
                             </li>
                             <li class="nav-item">
-                                <a href="event_dates.html" class="nav-link text-light">Event Dates</a>
+                                <a href="event_dates.html" class="nav-link text-light">Даты событий</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact_us.html" class="nav-link text-light">Contact us</a>
+                                <a href="contact_us.html" class="nav-link text-light">Связаться с нами</a>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -79,7 +102,7 @@
                 <div class="col-md-10 col-sm-10 col-xs-10 offset-md-1 d-flex justify-content-between" style="box-sizing: border-box!important">
                     <div class="logo d-flex align-items-center">
                         <div class="logoimg"><img src="img/school.png" alt=""></div>
-                        <div>9<sup>th</sup> School of Angren</div>
+                        <div>9 Школа</div>
                     </div>
                     <div>
                         <button id="menu-btn" class="btn navbar-toggler border-3 menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -88,7 +111,7 @@
                     </div>
                     <div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div class="offcanvas-header d-flex d-lg-none">
-                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Меню</h5>
                             <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" class="bi bi-x-circle" viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -99,22 +122,22 @@
                         <div class="offcanvas-body p-lg-0">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html#news_events">News & events</a>
+                                    <a class="nav-link active" aria-current="page" href="#news&events">Новости и события</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="event_dates.html">Event Dates</a>
+                                    <a class="nav-link active" aria-current="page" href="event_dates.html">Даты событий</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="enrolment.html">Enrolment</a>
+                                    <a class="nav-link active" aria-current="page" href="enrolment.html">Зачисление</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="student_life.html">Student life & learning</a>
+                                    <a class="nav-link active" aria-current="page" href="student_life.html">Школьная жизнь и обучение</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Community</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Сообщество</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
+                                    <a class="nav-link active" aria-current="page" href="contact_us.html">Связаться с нами</a>
                                 </li>
                                 <li>
                                     <ul id="offcanvassm" class="nav">
@@ -135,6 +158,12 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                        <a href="#" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
+                                    </div>
+                                </li>
 
                             </ul>
                         </div>
@@ -142,47 +171,150 @@
                     <div id="navbottom" class="menu-2 menu">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a href="enrolment.html" class="nav-link text-light">Enrolment</a>
+                                <a href="enrolment.html" class="nav-link text-light">Зачисление</a>
                             </li>
                             <li class="nav-item">
-                                <a href="student_life.html" class="nav-link text-light">Student life & learning</a>
+                                <a href="student_life.html" class="nav-link text-light">Школьная жизнь и обучение</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Community</a>
+                                <a href="" class="nav-link text-light">Сообщество</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="row linkk">
+            <!-- links -->
+            <div class="row linkk mt-5">
                 <div class="col-md-4 col-sm-6 col-xs-6 offset-md-8 offset-sm-6 offset-xs-6">
-                    <a href="index.html" class="text-warning">Home /</a>
-                    <a href="#" class="text-light">Our Staff</a>
+                    <a href="index.html" class="text-warning">Главная /</a>
+                    <a href="#" class="text-light">Наш персонал</a>
                 </div>
             </div>
             <!-- staff -->
             <div class="row event_dates mb-5">
-                <div class="mt-5 col-md-6 col-sm-10 col-xs-10 offset-sm-1 offset-xs-1 offset-md-1">
-                    <h1 class="text-warning">Our Staff</h1>
+                <div class="mt-5 col-md-8 col-sm-10 col-xs-10 offset-sm-1 offset-xs-1 offset-md-2">
+                    <h1 class="text-light mb-5">Наш персонал</h1>
 
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion stafff" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Head of school
+                                    Руководители школы
                             </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="row">
-                                        <div class="col-4">Week-1</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-2</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-3</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-4</div>
-                                        <div class="col-8">bla bla bla</div>
+                                        <div class="col-12 mt-4">
+                                            <div id="wellcomeCarousel1" class="carousel slide mb-5 wellcome" data-bs-touch="true" data-bs-inerterval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item wci active">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-md-5 offset-md-1 col-sm-10">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-md-5 col-sm-10">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Нурманова Нилуфар Бакировна</h4>
+                                                                        <p>Директор</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-23 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wc2">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-md-5 offset-md-1 col-sm-10">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-md-5 col-sm-10">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Каюмова Рано Исаковна</h4>
+                                                                        <p>ЎИБДЎ</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-36 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-md-5 offset-md-1 col-sm-10">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-md-5 col-sm-10">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Ахмедова Нодира Саттаралиевна</h4>
+                                                                        <p>ММИБДЎ</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-5 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Нурманова Нилуфар Бакировна</h4>
+                                                                        <p>Директор</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-23 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Нурманова Нилуфар Бакировна</h4>
+                                                                        <p>Директор</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-23 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                </div>
+                                                <ul id="wc-ind" class="carousel-indicators" style="transform: translateY(40px);">
+                                                    <li id="li" class="active wc-ind" data-bs-slide-to="0" data-bs-target="#wellcomeCarousel1"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="1" data-bs-target="#wellcomeCarousel1"></li>
+                                                    <li id="li" class="wc-ind" class="wc-ind" data-bs-slide-to="2" data-bs-target="#wellcomeCarousel1"></li>
+                                                    <!-- <li id="li" class="wc-ind" data-bs-slide-to="3" data-bs-target="#wellcomeCarousel1"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="4" data-bs-target="#wellcomeCarousel1"></li> -->
+                                                </ul>
+                                                <a href="#wellcomeCarousel1" id="wc-prev" class="carousel-control-prev" style="transform: none;" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#wellcomeCarousel1" id="wc-next" class="carousel-control-next" style="transform: none;" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -190,20 +322,159 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Russion Leterature
+                                    Русский язык и литература/Узбекский язык и литература
                             </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="row">
-                                        <div class="col-4">Week-1</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-2</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-3</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-4</div>
-                                        <div class="col-8">bla bla bla</div>
+                                        <div class="col-12 mt-4">
+                                            <div id="wellcomeCarousel2" class="carousel slide mb-5 wellcome" data-bs-touch="true" data-bs-inerterval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item wci active">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/Юсупова Елена.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Юсупова Елена Викторовна</h4>
+                                                                        <p>Учитель русского языка и литературы</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-29 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wc2">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/KarimovaF.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Каримова Фотима Мирзаевна</h4>
+                                                                        <p>Учитель русского языка и литературы</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-31 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Худойбердиева Мохира Абдуллаевна</h4>
+                                                                        <p>Учитель узбекского языка</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-26 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Сидоренко Елена Витальевна</h4>
+                                                                        <p>Учитель русского языка и литературы</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-23 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Цой Ольга Борисовна</h4>
+                                                                        <p>Учитель русского языка и литературы</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-5 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Комилова Гулбахор Эргашевна</h4>
+                                                                        <p>Учитель узбекского языка и литературыры</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-20 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Дервишева Айше Наримановна</h4>
+                                                                        <p>Учитель русского языка и литературы</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-17 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul id="wc-ind" class="carousel-indicators" style="transform: translateY(40px);">
+                                                    <li id="li" class="active wc-ind" data-bs-slide-to="0" data-bs-target="#wellcomeCarousel2"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="1" data-bs-target="#wellcomeCarousel2"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="2" data-bs-target="#wellcomeCarousel2"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="3" data-bs-target="#wellcomeCarousel2"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="4" data-bs-target="#wellcomeCarousel2"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="5" data-bs-target="#wellcomeCarousel2"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="6" data-bs-target="#wellcomeCarousel2"></li>
+                                                </ul>
+                                                <a href="#wellcomeCarousel2" id="wc-prev" class="carousel-control-prev" style="transform: none;" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#wellcomeCarousel2" id="wc-next" class="carousel-control-next" style="transform: none;" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -212,20 +483,65 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Math
+                                    Математика / Физика
                             </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="row">
-                                        <div class="col-4">Week-1</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-2</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-3</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-4</div>
-                                        <div class="col-8">bla bla bla</div>
+                                        <div class="col-12 mt-4">
+                                            <div id="wellcomeCarousel3" class="carousel slide mb-5 wellcome" data-bs-touch="true" data-bs-inerterval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item wci active">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/Юсупова Елена.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Эшончаева Гуллола Норалиевна</h4>
+                                                                        <p>Учитель математики и физики</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-15 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wc2">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/FefilovaY.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Фефилова Юлия Александровна</h4>
+                                                                        <p>Учитель математики и физики, дифтолог</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-15 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <ul id="wc-ind" class="carousel-indicators" style="transform: translateY(40px);">
+                                                    <li id="li" class="active wc-ind" data-bs-slide-to="0" data-bs-target="#wellcomeCarousel3"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="1" data-bs-target="#wellcomeCarousel3"></li>
+                                                </ul>
+                                                <a href="#wellcomeCarousel3" id="wc-prev" class="carousel-control-prev" style="transform: none;" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#wellcomeCarousel3" id="wc-next" class="carousel-control-next" style="transform: none;" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -234,20 +550,47 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                              Physics
+                                    География / Биология
                             </button>
                             </h2>
                             <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="row">
-                                        <div class="col-4">Week-1</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-2</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-3</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-4</div>
-                                        <div class="col-8">bla bla bla</div>
+                                        <div class="col-12 mt-4">
+                                            <div id="wellcomeCarousel4" class="carousel slide mb-5 wellcome" data-bs-touch="true" data-bs-inerterval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item wci active">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/Юсупова Елена.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Эрматова Махсуда Жаббаровна</h4>
+                                                                        <p>Учитель географии и биологии</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-31 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <ul id="wc-ind" class="carousel-indicators" style="transform: translateY(40px);">
+                                                    <li id="li" class="active wc-ind" data-bs-slide-to="0" data-bs-target="#wellcomeCarousel4"></li>
+                                                </ul>
+                                                <a href="#wellcomeCarousel4" id="wc-prev" class="carousel-control-prev" style="transform: none;" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#wellcomeCarousel4" id="wc-next" class="carousel-control-next" style="transform: none;" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -255,20 +598,46 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading5">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                              Physical culture
+                                    История 
                             </button>
                             </h2>
                             <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="row">
-                                        <div class="col-4">Week-1</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-2</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-3</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-4</div>
-                                        <div class="col-8">bla bla bla</div>
+                                        <div class="col-12 mt-4">
+                                            <div id="wellcomeCarousel5" class="carousel slide mb-5 wellcome" data-bs-touch="true" data-bs-inerterval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item wci active">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/Юсупова Елена.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Пирматова Ирода Бахтиёр қизи</h4>
+                                                                        <p>Учитель истории</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-9 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <ul id="wc-ind" class="carousel-indicators" style="transform: translateY(40px);">
+                                                    <li id="li" class="active wc-ind" data-bs-slide-to="0" data-bs-target="#wellcomeCarousel5"></li>
+                                                </ul>
+                                                <a href="#wellcomeCarousel5" id="wc-prev" class="carousel-control-prev" style="transform: none;" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#wellcomeCarousel5" id="wc-next" class="carousel-control-next" style="transform: none;" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -277,20 +646,141 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading6">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                              Chemics
+                                    Труд / Изобразительное искусство
                             </button>
                             </h2>
                             <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="row">
-                                        <div class="col-4">Week-1</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-2</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-3</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-4</div>
-                                        <div class="col-8">bla bla bla</div>
+                                        <div class="col-12 mt-4">
+                                            <div id="wellcomeCarousel6" class="carousel slide mb-5 wellcome" data-bs-touch="true" data-bs-inerterval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item wci active">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/Юсупова Елена.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Джумабаева Сурайё Алишер қизи</h4>
+                                                                        <p>учитель изобразительного искусства и инженерной графики</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-3 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wc2">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/KarimovaF.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Худойназарова Дилдора Тулкиновна</h4>
+                                                                        <p>Учитель труда</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-3 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Шахобхонова Саидахон Шоабдумаликовна</h4>
+                                                                        <p>Учитель труда</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-26 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Джураев Дурбек Ахмеджанович</h4>
+                                                                        <p>Учитель труда</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-28 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Гоибов Абдивахоб Абдикодирович</h4>
+                                                                        <p>Учитель труда</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-28 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Заманова Наиля Умедовна. </h4>
+                                                                        <p>Учитель труда</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-29 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <ul id="wc-ind" class="carousel-indicators" style="transform: translateY(40px);">
+                                                    <li id="li" class="active wc-ind" data-bs-slide-to="0" data-bs-target="#wellcomeCarousel6"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="1" data-bs-target="#wellcomeCarousel6"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="2" data-bs-target="#wellcomeCarousel6"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="3" data-bs-target="#wellcomeCarousel6"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="4" data-bs-target="#wellcomeCarousel6"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="5" data-bs-target="#wellcomeCarousel6"></li>
+                                                </ul>
+                                                <a href="#wellcomeCarousel6" id="wc-prev" class="carousel-control-prev" style="transform: none;" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#wellcomeCarousel6" id="wc-next" class="carousel-control-next" style="transform: none;" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -299,20 +789,65 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading7">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                              Art
+                                    Физическая культура 
                             </button>
                             </h2>
                             <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="row">
-                                        <div class="col-4">Week-1</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-2</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-3</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-4</div>
-                                        <div class="col-8">bla bla bla</div>
+                                        <div class="col-12 mt-4">
+                                            <div id="wellcomeCarousel7" class="carousel slide mb-5 wellcome" data-bs-touch="true" data-bs-inerterval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item wci active">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/Yusupova E.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Юсупова Эльвира Нагимовна</h4>
+                                                                        <p>Учитель физкультуры</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-33 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wc2">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/FefilovaY.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Назарова Сабохат Абдуллаевна</h4>
+                                                                        <p>Учитель физкультуры</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-8 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <ul id="wc-ind" class="carousel-indicators" style="transform: translateY(40px);">
+                                                    <li id="li" class="active wc-ind" data-bs-slide-to="0" data-bs-target="#wellcomeCarousel7"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="1" data-bs-target="#wellcomeCarousel7"></li>
+                                                </ul>
+                                                <a href="#wellcomeCarousel7" id="wc-prev" class="carousel-control-prev" style="transform: none;" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#wellcomeCarousel7" id="wc-next" class="carousel-control-next" style="transform: none;" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -321,20 +856,179 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading8">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                              April-
+                                    Начальное образование
                             </button>
                             </h2>
                             <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="row">
-                                        <div class="col-4">Week-1</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-2</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-3</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-4</div>
-                                        <div class="col-8">bla bla bla</div>
+                                        <div class="col-12 mt-4">
+                                            <div id="wellcomeCarousel8" class="carousel slide mb-5 wellcome" data-bs-touch="true" data-bs-inerterval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Закирова Эльмира Давидовна</h4>
+                                                                        <p>Учитель начального образования Начальное образование и фортепиано</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-33 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci active">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/Юсупова Елена.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Паттаев Алитдин Хабибуллаевич</h4>
+                                                                        <p>Учитель начального образования</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-39 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wc2">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/YusupovaFM.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Юсупова Феруза Мамаюсуповна </h4>
+                                                                        <p>Учитель начального образования</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-26 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Шахматдинова Лилия Михайловна </h4>
+                                                                        <p>Учитель начального образования</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-20 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/BotirovaG.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Ботирова Гавхар Данабаевна</h4>
+                                                                        <p>Учитель начального образования</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-21 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Омилова Насибахон Исомхоновна</h4>
+                                                                        <p>Учитель начального образования</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-17 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Гаппарханова Дилфуза Абдиназаровна</h4>
+                                                                        <p>Учитель начального образования</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-18 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Абдурахманова Жамила Ниматуллаевна</h4>
+                                                                        <p>Учитель начального образования Начальное образование и фортепиано</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-20 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <ul id="wc-ind" class="carousel-indicators" style="transform: translateY(40px);">
+                                                    <li id="li" class="active wc-ind" data-bs-slide-to="0" data-bs-target="#wellcomeCarousel8"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="1" data-bs-target="#wellcomeCarousel8"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="2" data-bs-target="#wellcomeCarousel8"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="3" data-bs-target="#wellcomeCarousel8"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="4" data-bs-target="#wellcomeCarousel8"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="5" data-bs-target="#wellcomeCarousel8"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="6" data-bs-target="#wellcomeCarousel8"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="7" data-bs-target="#wellcomeCarousel8"></li>
+                                                </ul>
+                                                <a href="#wellcomeCarousel8" id="wc-prev" class="carousel-control-prev" style="transform: none;" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#wellcomeCarousel8" id="wc-next" class="carousel-control-next" style="transform: none;" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -343,20 +1037,180 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading9">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                              Others
+                                    Другие
                             </button>
                             </h2>
                             <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="row">
-                                        <div class="col-4">Week-1</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-2</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-3</div>
-                                        <div class="col-8">bla bla bla</div>
-                                        <div class="col-4">Week-4</div>
-                                        <div class="col-8">bla bla bla</div>
+                                        <div class="col-12 mt-4">
+                                            <div id="wellcomeCarousel9" class="carousel slide mb-5 wellcome" data-bs-touch="true" data-bs-inerterval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Джелилова Гульнара Мадаминовна</h4>
+                                                                        <p>Сурдо-педагог</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-37 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Нефедова Нурия Ахатовна</h4>
+                                                                        <p>Олигофренопедагог</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-35 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Муминова Лобархон Рахмонжоновна</h4>
+                                                                        <p>Дефектолог</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-4 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci active">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/Юсупова Елена.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Нақибоева Одинахон Рустам қизи</h4>
+                                                                        <p>Дефектолог</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-2 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wc2">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/AshirovaD.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Аширова Дилшода Одилжон қизи </h4>
+                                                                        <p>Дефектолог</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-1 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Ташматова Нигина Руслановна</h4>
+                                                                        <p>Дефектолог</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-3 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/BotirovaG.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Мамаразакова Нодира Равшановна</h4>
+                                                                        <p>Дефектолог</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-9 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item wci">
+                                                        <div class="wc-item justify-content-center">
+                                                            <div class="row">
+                                                                <div class="col-5 offset-1">
+                                                                    <img src="img/staff/dir.jpg" style="width: 90%; margin: 0px;" alt="">
+                                                                </div>
+                                                                <div class="col-5">
+                                                                    <div class="welltxt">
+                                                                        <h4 class="mb-4 text-warning">Эргашев Жуманазар Абдувоидович</h4>
+                                                                        <p>Дефектолог</p>
+                                                                        <p>Образование-высшее</p>
+                                                                        <p>Опыт работы-3 лет</p>
+                                                                        <p>Kabinet-</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <ul id="wc-ind" class="carousel-indicators" style="transform: translateY(40px);">
+                                                    <li id="li" class="active wc-ind" data-bs-slide-to="0" data-bs-target="#wellcomeCarousel9"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="1" data-bs-target="#wellcomeCarousel9"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="2" data-bs-target="#wellcomeCarousel9"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="3" data-bs-target="#wellcomeCarousel9"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="4" data-bs-target="#wellcomeCarousel9"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="5" data-bs-target="#wellcomeCarousel9"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="6" data-bs-target="#wellcomeCarousel9"></li>
+                                                    <li id="li" class="wc-ind" data-bs-slide-to="7" data-bs-target="#wellcomeCarousel9"></li>
+                                                </ul>
+                                                <a href="#wellcomeCarousel9" id="wc-prev" class="carousel-control-prev" style="transform: none;" role="button" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </a>
+                                                <a href="#wellcomeCarousel9" id="wc-next" class="carousel-control-next" style="transform: none;" role="button" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -365,6 +1219,12 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="row footerr" style="background-color: rgba(185, 173, 4, 0.445);">
+                <div class="col-10 offset-1 h-4 my-4">
+                    <p style="color: black;">© Специализированная-вспомогательная школа № 9 для детей с ограниченными возможностями</p>
+                    <a href="contact_us.html" style="color: black; text-decoration: none; padding-left: 18px;"> Связаться с нами</a>
+                </div>
             </div>
         </div>
     </div>

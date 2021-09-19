@@ -23,6 +23,10 @@
         .accordion-button::after {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFF00'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
         }
+        
+        .accordion-body p {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -30,21 +34,21 @@
     <div class="container-fluid">
         <div style="box-sizing: border-box!important" class="wrapper">
             <!-- //carousel -->
-            <div class="row">
+            <div class="row home">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div id="fcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-inerterval="30000">
-                                <div class="carimg"><img src="img/1boyclass.jpg" alt=""></div>
+                                <div class="carimg"><img src="img/carousel_ind/photo_2021-09-18_14-11-43 (2).jpg" alt=""></div>
                             </div>
                             <div class="carousel-item" data-bs-inerterval="30000">
-                                <div class="carimg"><img src="img/2covid.jpg" alt=""></div>
+                                <div class="carimg"><img src="img/carousel_ind/photo_2021-09-18_14-11-41.jpg" alt=""></div>
                             </div>
                             <div class="carousel-item" data-bs-inerterval="30000">
-                                <div class="carimg"><img src="img/3study.jpg" alt=""></div>
+                                <div class="carimg"><img src="img/carousel_ind/photo_2021-09-18_14-11-43.jpg" alt=""></div>
                             </div>
                             <div class="carousel-item" data-bs-inerterval="30000">
-                                <div class="carimg"><img src="img/4classroom.jpg" alt=""></div>
+                                <div class="carimg"><img src="img/carousel_ind/mustdars.jpg" alt=""></div>
                             </div>
                         </div>
                         <ul class="carousel-indicators">
@@ -66,7 +70,7 @@
             <div class="row row-menu">
                 <div id="menu-top" class="col-md-10 col-sm-10 col-xs-10 offset-1 d-flex justify-content-between align-center menu-1 pt-1">
                     <div id="socialmedia" class="sm d-flex align-items-center">
-                        <span class="text-light">Follow us</span>
+                        <span class="text-light">Cоциальная сеть</span>
                         <ul class="nav">
                             <li class="nav-item ps-3 pe-1">
                                 <a href="#" class="nav-link">
@@ -87,15 +91,9 @@
                                 <p class="text-warning" style="font-size: 20px; padding: 0px; margin: 0px"> | </p>
                             </li>
                             <li class="nav-item px-2">
-                                <div class="btn-group lang-md" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                    <label class="btn btn-outline-light" style="height: 25px; font-size: 10px;" for="btnradio1">RU</label>
-
-                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                    <label class="btn btn-outline-light" style="height: 25px; font-size: 10px;" for="btnradio2">UZ</label>
-
-                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                                    <label class="btn btn-outline-light" style="height: 25px; font-size: 10px;" for="btnradio3">EN</label>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                    <a href="#" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
                                 </div>
                             </li>
                         </ul>
@@ -104,13 +102,13 @@
                     <div class="menu">
                         <ul id="navtop" class="nav">
                             <li class="nav-item">
-                                <a href="#news&events" class="nav-link text-light">News & events</a>
+                                <a href="#news&events" class="nav-link text-light">Новости и события</a>
                             </li>
                             <li class="nav-item">
-                                <a href="event_dates.html" class="nav-link text-light">Event Dates</a>
+                                <a href="event_dates.html" class="nav-link text-light">Даты событий</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact_us.html" class="nav-link text-light">Contact us</a>
+                                <a href="contact_us.html" class="nav-link text-light">Связаться с нами</a>
                             </li>
 
                         </ul>
@@ -120,7 +118,7 @@
                 <div class="col-md-10 col-sm-10 col-xs-10 offset-md-1 d-flex justify-content-between" style="box-sizing: border-box!important">
                     <div class="logo d-flex align-items-center">
                         <div class="logoimg"><img src="img/school.png" alt=""></div>
-                        <div>9<sup>th</sup> School of Angren</div>
+                        <div>9 Школа</div>
                     </div>
                     <div>
                         <button id="menu-btn" class="btn navbar-toggler border-3 menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -129,7 +127,7 @@
                     </div>
                     <div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div class="offcanvas-header d-flex d-lg-none">
-                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Меню</h5>
                             <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" class="bi bi-x-circle" viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -140,22 +138,22 @@
                         <div class="offcanvas-body p-lg-0">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#news&events">News & events</a>
+                                    <a class="nav-link active" aria-current="page" href="#news&events">Новости и события</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="event_dates.html">Event Dates</a>
+                                    <a class="nav-link active" aria-current="page" href="event_dates.html">Даты событий</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="enrolment.html">Enrolment</a>
+                                    <a class="nav-link active" aria-current="page" href="enrolment.html">Зачисление</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="student_life.html">Student life & learning</a>
+                                    <a class="nav-link active" aria-current="page" href="student_life.html">Школьная жизнь и обучение</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Community</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Сообщество</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
+                                    <a class="nav-link active" aria-current="page" href="contact_us.html">Связаться с нами</a>
                                 </li>
                                 <li>
                                     <ul id="offcanvassm" class="nav">
@@ -177,15 +175,9 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <div class="btn-group ms-4 mt-4" role="group" aria-label="Basic radio toggle button group">
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                        <label class="btn btn-outline-light" style="height: 25px; font-size: 10px;" for="btnradio1">RU</label>
-
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                        <label class="btn btn-outline-light" style="height: 25px; font-size: 10px;" for="btnradio2">UZ</label>
-
-                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                                        <label class="btn btn-outline-light" style="height: 25px; font-size: 10px;" for="btnradio3">EN</label>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                        <a href="#" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
                                     </div>
                                 </li>
 
@@ -195,13 +187,13 @@
                     <div id="navbottom" class="menu-2 menu">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a href="enrolment.html" class="nav-link text-light">Enrolment</a>
+                                <a href="enrolment.html" class="nav-link text-light">Зачисление</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link text-light">Student life & learning</a>
+                                <a href="" class="nav-link text-light">Школьная жизнь и обучение</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link text-light">Community</a>
+                                <a href="" class="nav-link text-light">Сообщество</a>
                             </li>
                         </ul>
                     </div>
@@ -209,27 +201,15 @@
             </div>
             <!-- schools -->
             <div class="row school">
-                <!-- <div class="col-md-3 col-xs-12 col-sm-6 px-0">
-                    <a href="#">
-                        <div class="lev border border-dark">
-                            <div class="bimg"><img src="img/—Pngtree—white book icon label_4695326.png" alt=""></div>
-                            <div class="line my-4"></div>
-                            <div class="txt">EARLY LEARNING</div>
-                            <div class="line my-4"></div>
-                            <p>Preschool</p>
-                            <div class="lev-bg"><img src="img/6girlclass.jpg" alt=""></div>
-                            <div class="opcity"></div>
-                        </div>
-                    </a>
-                </div> -->
+
                 <div class="col-md-4 col-xs-12 col-sm-4 px-0">
                     <a href="for_teachers.html">
                         <div class="lev border border-dark lev1">
                             <div class="bimg"><img src="img/—Pngtree—white book icon label_4695326.png" alt=""></div>
                             <div class="line my-4 yline"></div>
-                            <div class="txt">FOR <br> TEACHERS</div>
+                            <div class="txt">Учителям</div>
                             <div class="line my-4 yline"></div>
-                            <p class="more">More</p>
+                            <p class="more">Eще</p>
                             <div class="lev-bg"><img src="img/3lesson.jpg" alt=""></div>
                             <div class="opcity"></div>
                         </div>
@@ -240,9 +220,9 @@
                         <div class="lev border border-dark lev2">
                             <div class="bimg"><img src="img/—Pngtree—white book icon label_4695326.png" alt=""></div>
                             <div class="line my-4 yline"></div>
-                            <div class="txt">FOR <br> STUDENTS</div>
+                            <div class="txt">Ученикам</div>
                             <div class="line my-4 yline"></div>
-                            <p class="more">More</p>
+                            <p class="more">Eще</p>
                             <div class="lev-bg"><img src="img/library.jpg" alt=""></div>
                             <div class="opcity"></div>
                         </div>
@@ -254,7 +234,7 @@
                             <div class="bimg"><img src="img/—Pngtree—white book icon label_4695326.png" alt=""></div>
                             <div class="opcity"></div>
                             <div class="line my-4 yline"></div>
-                            <div class="txt">FOR <br> PARENTS</div>
+                            <div class="txt">Родителям</div>
                             <div class="line my-4 yline"></div>
                             <p class="more">More</p>
                             <div class="lev-bg"><img src="img/bantersnaps-9o8YdYGTT64-unsplash.jpg" alt=""></div>
@@ -265,48 +245,26 @@
             </div>
             <div class="row wellcome">
                 <div class="col-md-6 offset-md-3 my-5 py-5">
-                    <h1 class="mb-5 text-warning">A warm wellcome</h1>
-                    <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day and boarding school for girls located in Wahroonga, on Sydney’s North Shore.</p>
-                    <p>Our sixth Headmistress Miss Betty Archdale said,</p>
-                    <p>‘With education, women can do or be anything’.</p>
-                    <p>We always have, and always will, champion equality for women and girls.</p>
+                    <h1 class="mb-5 text-warning">Добро пожаловать</h1>
+                    <p>Добро пожаловать в cпециализированную-вспомогательную школу № 9 для детей с ограниченными возможностями, расположенную в г. Ангрен Ташкентской области.</p>
+                    <p>Основной целью деятельности школы и педагогического коллектива является подготовка учащихся к дальнейшей самостоятельной жизни, привитие навыков самообслуживания, социализация детей,социально-бытовая орентация учащихся, получение качественного
+                        образования, привитие интереса к учёбе.</p>
                 </div>
                 <div class="accordion accord" id="accordionExample accordisp">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                About us
+                                O школе
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
+                                    <img src="img/wellcome/about us.jpg" alt="">
                                     <div class="welltxt">
-                                        <h4>About us</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
-                                        <button class="btn btn-warning ">Read more +</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Headmisttress  
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
-                                    <div class="welltxt">
-                                        <h4>About us</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
-                                        <button class="btn btn-warning ">Read more +</button>
+                                        <h4>O школе</h4>
+                                        <p>Специализированная-вспомогательная школа № 9 для детей с ограниченными возможностями</p>
+                                        <a href="about_us.html" class="btn btn-warning" tabindex="-1" role="button">Read more +</a>
                                     </div>
                                 </div>
                             </div>
@@ -315,18 +273,17 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            OurStaff
-                            </button>
+                            Наш персонал
+                        </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
+                                    <img src="img/wellcome/OURSATAFF.jpg" alt="">
                                     <div class="welltxt">
-                                        <h4>About us</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
-                                        <button class="btn btn-warning ">Read more +</button>
+                                        <h4>Наш персонал</h4>
+                                        <p>В школе работает сильный творческий коллектив, стремящийся создать на всех уроках условия для развития и самореализации каждого ребёнка.</p>
+                                        <a href="staff.html" class="btn btn-warning " class="btn btn-warning" tabindex="-1" role="button">Read more +</a>
                                     </div>
                                 </div>
                             </div>
@@ -335,18 +292,17 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Term Dates
-                            </button>
+                        Даты мероприятий
+                        </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
+                                    <img src="img/wellcome/ART.jpg" alt="">
                                     <div class="welltxt">
-                                        <h4>About us</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
-                                        <button class="btn btn-warning ">Read more +</button>
+                                        <h4>Даты мероприятий</h4>
+                                        <p>На городские и школьные праздники учителя технологии совместно с учащимися организуют шикарные выставки поделок, также организуются ярмарки – продажи готовой продукции. </p>
+                                        <a href="event_dates.html" class="btn btn-warning " class="btn btn-warning" tabindex="-1" role="button">Read more +</a>
                                     </div>
                                 </div>
                             </div>
@@ -355,18 +311,17 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            History and Archives
-                            </button>
+                        История и архивы
+                        </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
+                                    <img src="img/wellcome/historical.jpg" alt="">
                                     <div class="welltxt">
-                                        <h4>About us</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
-                                        <button class="btn btn-warning ">Read more +</button>
+                                        <h4>История и архивы</h4>
+                                        <p>В 1973 году открылась cпециализированная-вспомогательная школа № 9 для детей с ограниченными возможностями в г. Ангрен Ташкентской области. Пятнадцать учителей обучали девяносто учеников.</p>
+                                        <a href="history.html" class="btn btn-warning " class="btn btn-warning" tabindex="-1" role="button">Read more +</a>
                                     </div>
                                 </div>
                             </div>
@@ -377,27 +332,27 @@
                     <ul id="wnav" class="wbind nav d-flex mb-5 justify-content-between ">
                         <li class="nav-item active wnavi wnav1" onclick="focuss('wnav1')">
                             <a href="#wellcomeCarousel" class="nav-link" data-bs-slide-to="0">
-                               About us
+                                O школе
                             </a>
                         </li>
                         <li class="nav-item px-1 wnavi wnav2" onclick="focuss('wnav2')">
                             <a href="#wellcomeCarousel" class="nav-link" data-bs-slide-to="1">
-                                Headmisttress
+                                Гордость школы
                             </a>
                         </li>
                         <li class="nav-item px-2 wnavi wnav3" onclick="focuss('wnav3')">
                             <a href="#wellcomeCarousel" class="nav-link" data-bs-slide-to="2">
-                                Our Staff
+                                Наш персонал
                             </a>
                         </li>
                         <li class="nav-item px-2 wnavi wnav4" onclick="focuss('wnav4')">
                             <a href="#wellcomeCarousel" class="nav-link" data-bs-slide-to="3">
-                                Term dates
+                                Даты событий
                             </a>
                         </li>
                         <li class="nav-item px-2 wnavi wnav5" onclick="focuss('wnav5')">
                             <a href="#wellcomeCarousel" class="nav-link" data-bs-slide-to="4">
-                                History and Archives
+                                История и архивы
                             </a>
                         </li>
                     </ul>
@@ -405,55 +360,50 @@
                         <div class="carousel-inner">
                             <div class="carousel-item wci active">
                                 <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
+                                    <img src="img/wellcome/about us.jpg" alt="">
                                     <div class="welltxt">
-                                        <h4>About us</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
+                                        <h4>O школе</h4>
+                                        <p>Специализированная-вспомогательная школа № 9 для детей с ограниченными возможностями</p>
                                         <a href="about_us.html" class="btn btn-warning" tabindex="-1" role="button">Read more +</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item wc2">
                                 <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
+                                    <img src="img/wellcome/smart.jpg" alt="">
                                     <div class="welltxt">
-                                        <h4>Headmistress</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
+                                        <h4>Гордость школы и чемпионы</h4>
+                                        <p>В нашей школе многие ученики показывают отличные результаты в учебе и в спорте, активно участвуют в жизни школы.</p>
                                         <a href="#" class="btn btn-warning " class="btn btn-warning" tabindex="-1" role="button">Read more +</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item wci">
                                 <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
+                                    <img src="img/wellcome/OURSATAFF.jpg" alt="">
                                     <div class="welltxt">
-                                        <h4>Our Staff</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
+                                        <h4>Наш персонал</h4>
+                                        <p>В школе работает сильный творческий коллектив, стремящийся создать на всех уроках условия для развития и самореализации каждого ребёнка.</p>
                                         <a href="staff.html" class="btn btn-warning " class="btn btn-warning" tabindex="-1" role="button">Read more +</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item wci">
                                 <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
+                                    <img src="img/wellcome/eventdates.png" alt="">
                                     <div class="welltxt">
-                                        <h4>Term Dates</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
+                                        <h4>Даты мероприятий</h4>
+                                        <p>На городские и школьные праздники учителя технологии совместно с учащимися организуют шикарные выставки поделок, также организуются ярмарки – продажи готовой продукции. </p>
                                         <a href="event_dates.html" class="btn btn-warning " class="btn btn-warning" tabindex="-1" role="button">Read more +</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item wci">
                                 <div class="wc-item">
-                                    <img src="img/3lesson.jpg" alt="">
+                                    <img src="img/wellcome/historical.jpg" alt="">
                                     <div class="welltxt">
-                                        <h4>History and Archives</h4>
-                                        <p>Welcome to Abbotsleigh, a Pre Kindergarten to Year 12 Anglican day school for girls located in Wahroonga, on Sydney’s North Shore. Our aim is to deliver a deeper learning that empowers the ‘whole girl’ so she can
-                                            unleash her potential within and way beyond the classroom.</p>
+                                        <h4>История и архивы</h4>
+                                        <p>В 1973 году открылась cпециализированная-вспомогательная школа № 9 для детей с ограниченными возможностями в г. Ангрен Ташкентской области. Пятнадцать учителей обучали девяносто учеников.</p>
                                         <a href="history.html" class="btn btn-warning " class="btn btn-warning" tabindex="-1" role="button">Read more +</a>
                                     </div>
                                 </div>
@@ -474,57 +424,56 @@
                         </a>
                     </div>
                 </div>
-
             </div>
             <div class="row kpdif">
                 <div class="col-md-6 offset-md-3 mt-4 py-5">
-                    <h1 class="mb-5 text-warning">Our key points of difference</h1>
-                    <p>Abbotsleigh’s holistic education, underpinned by the Christian faith, helps our girls thrive today and tomorrow. We empower amazing girls to do amazing things.</p>
-                    <p>We invite you to explore …</p>
+                    <h1 class="mb-5 text-warning">Наши ключевые отличия</h1>
+                    <p>Целостное образование в школе № 9 , подготовка учащихся к дальнейшей самостоятельной жизни помогает нашим ученикам процветать сегодня и завтра. Мы помогаем удивительным детям возможность делать удивительные вещи.</p>
+                    <p>Приглашаем вас изучить…</p>
                 </div>
                 <div class="col-md-10 offset-md-1 pb-5">
                     <div class="row">
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="card">
                                 <div class="card-body p-0">
-                                    <img src="img/2pensils.jpg" alt="">
+                                    <img src="img/keypoints/OPENAIR.jpg" alt="">
                                 </div>
                                 <div class="card-footer">
-                                    <h4 class="my-4">Outdoor education</h4>
-                                    <p>Outdoor education develops resilience, confidence and independence</p>
+                                    <h4 class="my-4">Oбразование на открытом воздухе</h4>
+                                    <p>Обучение на свежем воздухе на уроках физкультуры, изобразительного искусства, ритмики развивает наблюдательность, уверенность и независимость.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="card">
                                 <div class="card-body p-0">
-                                    <img src="img/2pensils.jpg" alt="">
+                                    <img src="img/keypoints/artt.jpg" alt="">
                                 </div>
                                 <div class="card-footer">
-                                    <h4 class="my-4">Outdoor education</h4>
-                                    <p>Outdoor education develops resilience, confidence and independence</p>
+                                    <h4 class="my-4">Искусство</h4>
+                                    <p>На уроках технологии и изобразительного искусства ребята создают прекрасные поделки и рисунки.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="card">
                                 <div class="card-body p-0">
-                                    <img src="img/2pensils.jpg" alt="">
+                                    <img src="img/keypoints/20180129_132032.jpg" alt="">
                                 </div>
                                 <div class="card-footer">
-                                    <h4 class="my-4">Outdoor education</h4>
-                                    <p>Outdoor education develops resilience, confidence and independence</p>
+                                    <h4 class="my-4">Спорт</h4>
+                                    <p>Учащиеся с увлечением посещают уроки физкультуры и спортивные кружки, участвуют в различных соревнованиях, получают грамоты и медали.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-12 col-sm-6">
                             <div class="card">
                                 <div class="card-body p-0">
-                                    <img src="img/2pensils.jpg" alt="">
+                                    <img src="img/keypoints/music.jpg" alt="">
                                 </div>
                                 <div class="card-footer">
-                                    <h4 class="my-4">Outdoor education</h4>
-                                    <p>Outdoor education develops resilience, confidence and independence</p>
+                                    <h4 class="my-4">Наши артисты</h4>
+                                    <p>На школьных праздниках ребята выступают с интересными номерами, сценками, танцами и песнями.</p>
                                 </div>
                             </div>
                         </div>
@@ -533,11 +482,11 @@
             </div>
             <div class="row news_events" id="news&events">
                 <div class="col-md-6 offset-md-3 mt-4 py-5">
-                    <h1 class="mb-5 text-warning"><a href=""> News and Events</a></h1>
-                    <p>Abbotsleigh is a vibrant and busy place.</p>
-                    <p>Our news and events section keeps you up to date with what's going on. </p>
-                    <p>Share in our joys. Take part in our events.</p>
-                    <p>Visit often – we don't want you to miss a thing.</p>
+                    <h1 class="mb-5 text-warning"><a href=""> Новости и события</a></h1>
+                    <p>Школа № 9 - яркое и оживленное место.</p>
+                    <p>В нашем разделе новостей и событий вы всегда будете в курсе того, что происходит.</p>
+                    <p>Разделите наши радости. Примите участие в наших мероприятиях.</p>
+                    <p>Посещайте часто, чтобы ничего не упустить.</p>
                 </div>
                 <div class="row news mb-5">
                     <div class="col-md-10 offset-md-1">
@@ -546,11 +495,47 @@
                                 <ul class="glide__slides">
                                     <li class="glide__slide">
                                         <div style="text-align: center;">
-                                            <img src="img/2covid.jpg" alt="">
-                                            <h3 class="mb-3">Old girls business directory</h3>
-                                            <p>A directory of business owned by sjdfnaljdfnlad jfnald fn</p>
+                                            <img src="img/news/firstschool.jpg" alt="">
+                                            <h3 class="mb-3">Первый раз- в первый класс!</h3>
+                                            <p>В новом учебном году школа приняла мылышей в первые классы- с русским и узбекским языком обучения.</p>
                                             <button class="btn btn-warning my-3">Read more +</button>
-                                            <p class="my-4">Category tag: Old Girls</p>
+                                            <p class="my-4"></p>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <div style="text-align: center;">
+                                            <img src="img/news/mustdars.jpg" alt="">
+                                            <h3 class="mb-3">Урок Независимости -главный урок.</h3>
+                                            <p>По традиции каждый новый учебный год начинается с Урока Независимости.</p>
+                                            <button class="btn btn-warning my-3 ">Read more +</button>
+                                            <p class="my-4"></p>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <div style="text-align: center;">
+                                            <img src="img/news/open.jpg" alt="">
+                                            <h3 class="mb-3">"Время чудес"</h3>
+                                            <p>18 сентября в школе прошла благотворительная акция "Время чудес", организованная волонтерами из г.Ташкента</p>
+                                            <button class="btn btn-warning my-3 ">Read more +</button>
+                                            <p class="my-4"></p>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <div style="text-align: center;">
+                                            <img src="img/news/1iyun.jpg" alt="">
+                                            <h3 class="mb-3">1 июня- День защиты детей.</h3>
+                                            <p>Каждый год 1 июня в школе проводится праздник, посвященный Дню защиты детей. Для ребят организуются конкурсы, танцы и сладкие подарки.</p>
+                                            <button class="btn btn-warning my-3 ">Read more +</button>
+                                            <p class="my-4"></p>
+                                        </div>
+                                    </li>
+                                    <!-- <li class="glide__slide">
+                                        <div style="text-align: center;">
+                                            <img src="img/2covid.jpg" alt="">
+                                            <h3 class="mb-3">Old girls business directory</h3>
+                                            <p>A directory of business owned by sjdfnaljdfnlad jfnald fn</p>
+                                            <button class="btn btn-warning my-3 ">Read more +</button>
+                                            <p class="my-4"></p>
                                         </div>
                                     </li>
                                     <li class="glide__slide">
@@ -559,45 +544,9 @@
                                             <h3 class="mb-3">Old girls business directory</h3>
                                             <p>A directory of business owned by sjdfnaljdfnlad jfnald fn</p>
                                             <button class="btn btn-warning my-3 ">Read more +</button>
-                                            <p class="my-4">Category tag: Old Girls</p>
+                                            <p class="my-4"></p>
                                         </div>
-                                    </li>
-                                    <li class="glide__slide">
-                                        <div style="text-align: center;">
-                                            <img src="img/2covid.jpg" alt="">
-                                            <h3 class="mb-3">Old girls business directory</h3>
-                                            <p>A directory of business owned by sjdfnaljdfnlad jfnald fn</p>
-                                            <button class="btn btn-warning my-3 ">Read more +</button>
-                                            <p class="my-4">Category tag: Old Girls</p>
-                                        </div>
-                                    </li>
-                                    <li class="glide__slide">
-                                        <div style="text-align: center;">
-                                            <img src="img/2covid.jpg" alt="">
-                                            <h3 class="mb-3">Old girls business directory</h3>
-                                            <p>A directory of business owned by sjdfnaljdfnlad jfnald fn</p>
-                                            <button class="btn btn-warning my-3 ">Read more +</button>
-                                            <p class="my-4">Category tag: Old Girls</p>
-                                        </div>
-                                    </li>
-                                    <li class="glide__slide">
-                                        <div style="text-align: center;">
-                                            <img src="img/2covid.jpg" alt="">
-                                            <h3 class="mb-3">Old girls business directory</h3>
-                                            <p>A directory of business owned by sjdfnaljdfnlad jfnald fn</p>
-                                            <button class="btn btn-warning my-3 ">Read more +</button>
-                                            <p class="my-4">Category tag: Old Girls</p>
-                                        </div>
-                                    </li>
-                                    <li class="glide__slide">
-                                        <div style="text-align: center;">
-                                            <img src="img/2covid.jpg" alt="">
-                                            <h3 class="mb-3">Old girls business directory</h3>
-                                            <p>A directory of business owned by sjdfnaljdfnlad jfnald fn</p>
-                                            <button class="btn btn-warning my-3 ">Read more +</button>
-                                            <p class="my-4">Category tag: Old Girls</p>
-                                        </div>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <div class="glide__arrows" data-glide-el="controls">
@@ -613,11 +562,17 @@
                                 <button class="glide__bullet" data-glide-dir="=1"></button>
                                 <button class="glide__bullet" data-glide-dir="=2"></button>
                                 <button class="glide__bullet" data-glide-dir="=4"></button>
-                                <button class="glide__bullet" data-glide-dir="=5"></button>
-                                <button class="glide__bullet" data-glide-dir="=6"></button>
+                                <!-- <button class="glide__bullet" data-glide-dir="=5"></button>
+                                <button class="glide__bullet" data-glide-dir="=6"></button> -->
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row footerr" style="background-color: rgba(185, 173, 4, 0.445);">
+                <div class="col-10 offset-1 h-4 my-4">
+                    <p style="color: black;">© Специализированная-вспомогательная школа № 9 для детей с ограниченными возможностями</p>
+                    <a href="contact_us.html" style="color: black; text-decoration: none; padding-left: 18px;"> Связаться с нами</a>
                 </div>
             </div>
         </div>

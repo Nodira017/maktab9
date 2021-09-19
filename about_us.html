@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>O школе</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mian.css">
     <link rel="stylesheet" href="css/bootstrap.minn.css">
@@ -22,6 +22,10 @@
         .linkk a {
             text-decoration: none;
         }
+        
+        p {
+            text-align: justify;
+        }
     </style>
 </head>
 
@@ -34,7 +38,7 @@
                     <div id="fcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="carimg"><img src="img/1boyclass.jpg" alt=""></div>
+                                <div style="width: 100%;"><img src="img/1boyclass.jpg" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -44,7 +48,7 @@
             <div class="row row-menu">
                 <div id="menu-top" class="col-md-10 col-sm-10 col-xs-10 offset-1 d-flex justify-content-between align-center menu-1 pt-1">
                     <div id="socialmedia" class="sm d-flex align-items-center">
-                        <span class="text-light">Follow us</span>
+                        <span class="text-light">Cоциальная сеть</span>
                         <ul class="nav">
                             <li class="nav-item ps-3 pe-1">
                                 <a href="#" class="nav-link">
@@ -61,20 +65,30 @@
                                     <div><img src="img/white instagram icon.png" alt=""></div>
                                 </a>
                             </li>
+                            <li class="nav-item px-2 lang-p">
+                                <p class="text-warning" style="font-size: 20px; padding: 0px; margin: 0px"> | </p>
+                            </li>
+                            <li class="nav-item px-2">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                    <a href="#" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="menu">
                         <ul id="navtop" class="nav">
                             <li class="nav-item">
-                                <a href="#news&events" class="nav-link text-light">News & events</a>
+                                <a href="#news&events" class="nav-link text-light">Новости и события</a>
                             </li>
                             <li class="nav-item">
-                                <a href="event_dates.html" class="nav-link text-light">Event Dates</a>
+                                <a href="event_dates.html" class="nav-link text-light">Даты событий</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact_us.html" class="nav-link text-light">Contact us</a>
+                                <a href="contact_us.html" class="nav-link text-light">Связаться с нами</a>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -82,7 +96,7 @@
                 <div class="col-md-10 col-sm-10 col-xs-10 offset-md-1 d-flex justify-content-between" style="box-sizing: border-box!important">
                     <div class="logo d-flex align-items-center">
                         <div class="logoimg"><img src="img/school.png" alt=""></div>
-                        <div>9<sup>th</sup> School of Angren</div>
+                        <div>9 Школа</div>
                     </div>
                     <div>
                         <button id="menu-btn" class="btn navbar-toggler border-3 menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -91,7 +105,7 @@
                     </div>
                     <div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div class="offcanvas-header d-flex d-lg-none">
-                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Меню</h5>
                             <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" class="bi bi-x-circle" viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -102,22 +116,22 @@
                         <div class="offcanvas-body p-lg-0">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html#news_events">News & events</a>
+                                    <a class="nav-link active" aria-current="page" href="#news&events">Новости и события</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="event_dates.html">Event Dates</a>
+                                    <a class="nav-link active" aria-current="page" href="event_dates.html">Даты событий</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="enrolment.html">Enrolment</a>
+                                    <a class="nav-link active" aria-current="page" href="enrolment.html">Зачисление</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="student_life.html">Student life & learning</a>
+                                    <a class="nav-link active" aria-current="page" href="student_life.html">Школьная жизнь и обучение</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Community</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Сообщество</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us</a>
+                                    <a class="nav-link active" aria-current="page" href="contact_us.html">Связаться с нами</a>
                                 </li>
                                 <li>
                                     <ul id="offcanvassm" class="nav">
@@ -138,6 +152,12 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                        <a href="#" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
+                                    </div>
+                                </li>
 
                             </ul>
                         </div>
@@ -145,13 +165,13 @@
                     <div id="navbottom" class="menu-2 menu">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a href="enrolment.html" class="nav-link text-light">Enrolment</a>
+                                <a href="enrolment.html" class="nav-link text-light">Зачисление</a>
                             </li>
                             <li class="nav-item">
-                                <a href="student_life.html" class="nav-link text-light">Student life & learning</a>
+                                <a href="" class="nav-link text-light">Школьная жизнь и обучение</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link text-light">Community</a>
+                                <a href="" class="nav-link text-light">Сообщество</a>
                             </li>
                         </ul>
                     </div>
@@ -159,16 +179,77 @@
             </div>
             <div class="row linkk mt-5">
                 <div class="col-md-4 col-sm-6 col-xs-6 offset-md-8 offset-sm-6 offset-xs-6">
-                    <a href="index.html" class="text-warning">Home /</a>
-                    <a href="#" class="text-light">About us</a>
+                    <a href="index.html" class="text-warning">Главная /</a>
+                    <a href="#" class="text-light">O школе</a>
                 </div>
             </div>
-            <!-- enrolment -->
-            <div class="row mt-5">
-                <div class="col-md-6 col-sm-11 col-xs-11 offset-1">
-                    <h1 class="text-warning">About us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nam minus similique magni accusantium praesentium facere ea itaque, omnis sunt recusandae repellendus sequi! Veritatis illo vero qui, perferendis eligendi incidunt.</p>
-                    <h3 class="text-warning mb-3">Document templates</h3>
+            <!-- About us -->
+            <div class="row my-5">
+                <div class="col-md-6 col-sm-10 col-xs-10 offset-md-1 offset-sm-1 offset-xs-1">
+                    <h1 class="text-warning">O школе</h1>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nam minus similique magni accusantium praesentium facere ea itaque, omnis sunt recusandae repellendus sequi! Veritatis illo vero qui, perferendis eligendi incidunt.</p> -->
+                    <h4 class="text-warning mb-3">Имя:</h4>
+                    <p>Специализированная-вспомогательная школа № 9 для детей с ограниченными возможностями</p>
+
+                    <h4 class="text-warning mb-3">Год основания: </h4>
+                    <p>1973</p>
+
+                    <h4 class="text-warning mb-3">Адрес школы: </h4>
+                    <p>город Ангрен,улица Ахиллик,31</p>
+
+                    <h4 class="text-warning mb-3">Язык обучения: </h4>
+                    <p>русский ,узбекский</p>
+
+                    <h4 class="text-warning mb-3">Режим работы: </h4>
+                    <p>односменная</p>
+
+                    <h4 class="text-warning mb-3">Вышестоящие организации</h4>
+                    <p>Городской отдел народного образования (находится в г. Ангрене,ул.Бунёдкор 38);
+                    </p>
+                    <p>Областное Управление народного образования</p>
+                    <p>Министерство Народного Образования (находится в г. Ташкенте).</p>
+
+                    <h4 class="text-warning mb-3">В школе обучается всего: </h4>
+                    <p>156 учеников, из них 35- на надомном обучении.</p>
+                    <p>Количество классов -14</p>
+                    <p>Всего педагогов- 42, из них с высшим образованием -41 , со средним специальным -1(воспитатель ГПД )</p>
+                    <p>Учителей- дефектологов -13</p>
+                    <p>Прошли курсы переподготовки по олигофренопедагогике -29</p>
+                    <p>Работает 14 кружков, из них 11- школьные, 3-по линии центра "Баркамол Авлод".</p>
+                    <p>Спортивные секции – 4</p>
+                    <p>Школа имеет футбольное поле,спортивный зал , актовый зал, столовую, школьные мастерские,библиотеку.</p>
+                    <p>Компьютерный кабинет -1.</p>
+
+                    <p>Основной целью деятельности школы и педагогического коллектива является подготовка учащихся к дальнейшей самостоятельной жизни, привитие навыков самообслуживания, социализация детей,социально-бытовая орентация учащихся, получение качественного
+                        образования, привитие интереса к учёбе.</p>
+                    <p>В школе работает сильный творческий коллектив, стремящийся создать на всех уроках условия для развития и самореализации каждого ребёнка.</p>
+                    <p>Для достижения образовательных и коррекционных целей учителя школы активно используют инновационные технологии , новые приёмы и методы обучения, обучающие игры, составляют учебные программы.</p>
+                    <p>В школе работают 4 логопеда, которые работают над коррекцией звукопроизношения учащихся. </p>
+                    <p>Основные направления учебно- воспитательного процесса:</p>
+                    <ul>
+                        <li>Постоянно совершенствовать педагогическое мастерство учителей, внедрять в образовательный процесс новые педтехнологии.</li>
+                        <li>Обобщать и распространять опыт творчески работающих учителей.</li>
+                        <li>Применять новые формы проведения заседаний методических секций.</li>
+                        <li>Продолжать работу « Школы- наставничества» . (« Устоз- шогирд») </li>
+                        <li>Продолжать работу по направлению «Школа – семья- махалля».</li>
+                        <li>Разнообразить работу школьных кружков с целью привлечения учащихся по их интересам и способностям.</li>
+                        <li>Вести профилактическую работу с учащимися «группы риска» с целью предотвращения правонарушений.</li>
+                        <li>Пополнять библиотечный фонд школы с целью воспитания интереса к чтению среди учащихся.</li>
+                    </ul>
+                    <p>Матерально- техническая база школы с каждым годом обновляется и обогащается, создаются все условия для полноценного развития учащихся с ОВЗ.</p>
+                    <p>В 2014 году в школе был проведён капитальный ремонт.</p>
+                    <p>За последние годы в школе оснащен компьютерный класс, кабинет ритмики. Во всех кабинетах установлена новая мебель,школьные доски, телевизоры. Приобретена новая мебель в школьную столовую,в актовый зал.</p>
+                    <p>Основным направлением школы является трудовое и профессиональное обучение.</p>
+                    <p>Мальчики и девочки обучаются по разным направлениям: швейное дело,сельское хозяйство, тестопластика, вышивание,обувное дело, слесарное и столярное дело,изготовление искусственных цветов и другое.</p>
+                    <p>На городские и школьные праздники учителя технологии совместно с учащимися организуют шикарные выставки поделок, также организуются ярмарки – продажи готовой продукции. При школе построена теплица, в которой учащиеся под руководством
+                        учителей выращивают цветы и овощи.</p>
+                    <h4 class="text-warning">Коллектив взрослых и детей живёт одной дружной семьёй!</h4>
+                    <h4 class="text-warning">Школа для нас – родной дом, любимый и теплый!</h4>
+
+
+
+
+                    <!-- <h3 class="text-warning mb-3">Document templates</h3>
                     <div class="row mb-5">
                         <div class="col-4 mb-3">Application for enrolment</div>
                         <div class="col-8">
@@ -183,14 +264,17 @@
                                 <input type="button" id="hello" value="doc">
                             </a>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
             </div>
-
-            <div class="row">
-
+            <!-- footer -->
+            <div class="row footerr" style="background-color: rgba(185, 173, 4, 0.445);">
+                <div class="col-10 offset-1 h-4 my-4">
+                    <p style="color: black;">© Специализированная-вспомогательная школа № 9 для детей с ограниченными возможностями</p>
+                    <a href="contact_us.html" style="color: black; text-decoration: none; padding-left: 18px;"> Связаться с нами</a>
+                </div>
             </div>
         </div>
     </div>
