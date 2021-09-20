@@ -5,26 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bosh sahifa</title>
+    <title>O'quvchilar uchun</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mian.css">
     <link rel="stylesheet" href="css/bootstrap.minn.css">
     <style>
-        input[type=button] {
-            background-color: black;
-            border: 1px solid yellow;
-            border-radius: 5px;
-            color: white;
-            width: 50px;
-            height: 30px;
+        .accordion,
+        .accordion-button,
+        .accordion-item {
+            background-color: rgb(10, 1, 10) !important;
         }
         
         .linkk a {
             text-decoration: none;
         }
         
-        p {
-            text-align: justify;
+        .col-md-1 a {
+            border: 1px solid yellow;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            padding: 0px 10px 5px 10px;
+        }
+        
+        .schedule a {
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
@@ -38,7 +44,7 @@
                     <div id="fcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="carimg"><img src="img/1boyclass.jpg" alt=""></div>
+                                <div style="width: 100%;"><img src="img/forstudents/forstudents.jpg" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -70,7 +76,7 @@
                             </li>
                             <li class="nav-item px-2">
                                 <div class="btn-group">
-                                    <a href="about_us.html" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                    <a href="for_students.html" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
                                     <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
                                 </div>
                             </li>
@@ -154,7 +160,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <div class="btn-group">
-                                        <a href="about_us.html" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                        <a href="for_students.html" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
                                         <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
                                     </div>
                                 </li>
@@ -180,88 +186,130 @@
             <div class="row linkk mt-5">
                 <div class="col-md-4 col-sm-6 col-xs-6 offset-md-8 offset-sm-6 offset-xs-6">
                     <a href="uz_index.html" class="text-warning">Bosh sahifa /</a>
-                    <a href="#" class="text-light">Maktab haqida</a>
+                    <a href="#" class="text-light">O'quvchilar uchun</a>
                 </div>
             </div>
-            <!-- About us -->
-            <div class="row my-5">
-                <div class="col-md-6 col-sm-11 col-xs-11 offset-1">
-                    <h1 class="text-warning">Maktab haqida</h1>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nam minus similique magni accusantium praesentium facere ea itaque, omnis sunt recusandae repellendus sequi! Veritatis illo vero qui, perferendis eligendi incidunt.</p> -->
-                    <h3 class="text-warning mb-3">Maktab nomi</h3>
-                    <p>9- sonli imkoniyati cheklangan bolalar uchun ixtisoslashtirilgan yordamchi maktab.</p>
+            <!-- for students -->
+            <div class="row event_dates mb-5">
+                <div class="mt-5 col-md-8 col-sm-10 col-xs-10 offset-sm-1 offset-xs-1 offset-md-1">
+                    <h1 class="text-warning">O'quvchilar uchun</h1>
 
-                    <h3 class="text-warning mb-3">Tashkil topgan yili </h3>
-                    <p>1973</p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Huquq va majburiyatlar
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-10 col-sm-12">
+                                            <p>O'quvchilarning huquq va majburiyatlari</p>
+                                        </div>
+                                        <div class="col-md-1 col-sm-10 mb-2">
+                                            <a href="documnets/forstudents/Обязанности и права учащихся.pdf">
+                                                yuklash
+                                            </a>
+                                        </div>
+                                        <div class="col-md-10 col-sm-12">
+                                            <p>O'quvchilarga qo'yilgan talablar</p>
+                                        </div>
+                                        <div class="col-md-1 col-sm-10 mb-2">
+                                            <a href="documnets/forstudents/treb.pdf">
+                                                yuklash
+                                            </a>
+                                        </div>
+                                        <div class="col-md-10 col-sm-12">
+                                            <p> Dars faoliyatidagi talablar</p>
+                                        </div>
+                                        <div class="col-md-1 col-sm-10 mb-2">
+                                            <a href="documnets/forstudents/trur.pdf">
+                                                yuklash
+                                            </a>
+                                        </div>
 
-                    <h3 class="text-warning mb-3">Manzil</h3>
-                    <p>Angren shahri Axillik ko‘chasi 31 –uy</p>
-
-                    <h3 class="text-warning mb-3">Ta'lim tili</h3>
-                    <p>O‘zbek va rus tillarida </p>
-
-                    <h3 class="text-warning mb-3">Ish tartibi</h3>
-                    <p>Bir smena</p>
-
-                    <h3 class="text-warning mb-3">Yuqori tashkilotlar</h3>
-                    <p>Shahar xalq ta’limi bo ‘limi (Angren shahar, Bunyodkor ko‘chasi 38-uy).
-                    </p>
-                    <p>Xalq ta’limi va’zirligi. (Toshkentda joylashgan)</p>
-
-                    <h3 class="text-warning mb-3">Maktabda o‘quvchilar soni jami</h3>
-                    <p>156 ta o‘quvchi,shundan 35 nafari uy ta’limidagi o‘quvchilar.</p>
-                    <p>Sinflar soni -14</p>
-                    <p>Jami o‘qituvchilar soni: 42 nafar ,shundan 41 nafari oliy ma’lumotli, O‘rta maxsus ma’lumotli 1 nafar (KUG tarbiyachi).
-                    </p>
-                    <p>O‘qituvchi defektologlar: 13 nafar</p>
-                    <p>Oligofrenopedagogika bo‘yicha qayta tayyorlov kurslarini 29 nafar o‘qituvchi o‘tagan.</p>
-                    <p>14- ta to‘garak faoliyat olib boradi, ulardan 11 nafari maktab, 3 nafari "Barkamaol avlod" markazi hamkorligida tashkil etilgan.</p>
-                    <p>Sport to‘garaklari -4 ta.</p>
-                    <p>Maktabda futbol maydoni, sport zal, jamoa zali, oshxona,maktab ustaxonlari,kutubxona va 1 ta kompyuter xonasi mavjud.</p>
-
-                    <p>Maktabning va o‘qituvchilar jamoasining asosiy maqsadi o‘quvchilarning kelajakdagi mustaqil hayotga tayyorlash,o ‘z –o ‘ziga xizmat qilish malakalarini singdirish,ijtimoiy moslashishga yordamlashish,ijtimoiy-ma’ishiy yo‘naltirish,
-                        sifatli ta’lim berish va o‘qish va bilim olishga qiziqtirish.</p>
-                    <p>Maktabda kuchli ijodkor jamoa ish olib boradi va hamma darslarda har bir o‘quvchining rivojlanishi hamda o‘z-o‘zini anglashi uchun sharoit yaratishga intiladi.</p>
-                    <p> Maktabda ta’limni takomillashtirish va korreksiyalash maqsadida o‘qituvchilar mashg ‘ulotlar davomida yangi innovatsion pedtexnologiya usullaridan,didaktik va tarbiyaviy o‘yinlardan faol foydalanadilar. Maktabda 4 nafar logoped o‘quvchilarning
-                        tovushlarini to‘gri talaffuz qilish va nutqini rivojlantirish maqsadida ish olib boradilar.
-                    </p>
-                    <p>Ta’lim-tarbiya jarayonining asosiy yo‘nalishlari:</p>
-                    <ul>
-                        <li>O‘qituvchilarning pedagogik mahoratlarini doimiy ravishda takomillashtirish, yangi pedagogik texnologiyalarni o‘quv jarayoniga joriy etish;</li>
-                        <li>Ijodkor o‘qituvchilar tajribasini umumlashtirish;</li>
-                        <li>“Ustoz- shogird” an’anasini davom ettirish;</li>
-                        <li>“Maktab –oila- mahalla” yo‘nalishidagi ishlarni olib borish</li>
-                        <li>O‘quvchilar qiziqishlari va qobiliyatlariga ko‘ra to‘garaklarga jalb qilish maqsadida turli xil sonini ko‘paytirish</li>
-                        <li>Huquqbuzarliklarni oldini olish maqsadida tarbiyasi og’ir o‘quvchilar bilan tarbiyaviy profilaktika ishlarini olib borish;</li>
-                        <li>O‘quvchilarning kitob o‘qishga bo‘lgan qiziqishini tarbiyalsh maqsadida, maktab kutubxona fondini boyitish;</li>
-                    </ul>
-                    <p>Har yili maktabning moddiy texnik bazasi yangilanib bormoqda. 2014 yili maktabimiz kapital ta’mirdan chiqqan.</p>
-                    <p>Ohirgi yillarda maktabimizda kompyuter honasi va ritmika xonalari jihozlandi. Barcha kabinetlarda yangi mebel,o‘quv doska,televizorlar o‘rnatilgan. Maktab oshxonasi va jamoa zali yangi stol,stullar bilan jihozlandi.</p>
-                    <p>Texnologiya fanidan o‘g‘il va qiz bolalar har xil yo‘nalishlarda o‘qitiladilar. Bular: tikuvchilik, qishloq ho‘jaligi, suniy gullar yasash,kashtachilik va boshqalar.</p>
-                    <p>Shahar va maktab miqyosida o‘tadigan tadbirlarda maktab o‘quvchilarimiz faol qatnashib o‘z qo‘llari bilan yasagan ajoyib ishlarini ko‘rgazmalarda namoyish qilib,sotuvga ham chiqarishadi. tashkil qiladilar.Maktabda issiqxona qurilgan
-                        bo’lib u yerda o‘quvchilar o‘qituvchilari nazorati ostida gullar va sabzavotlar yetishtiradilar.</p>
-                    <h4 class="text-warning">Biz bir oilamiz- mehr bizni birlashtiradi!</h4>
-                    <h4 class="text-warning">Maktab biz uchun eng yoqimli , sevimli va yorqin maskan!</h4>
-
-
-
-
-                    <!-- <h3 class="text-warning mb-3">Document templates</h3>
-                    <div class="row mb-5">
-                        <div class="col-4 mb-3">Application for enrolment</div>
-                        <div class="col-8">
-                            <a href="contact_us.html" download="">
-                                <input type="button" id="hello" value="doc">
-                            </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="col-4">Application for enrolment</div>
-                        <div class="col-8">
-                            <a href="contact_us.html" download="">
-                                <input type="button" id="hello" value="doc">
-                            </a>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Maktab formasi
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>Yangi 2016-2017 o'quv yilidan boshlab quyidagi UNIFORM maktab formasi qabul qilindi: asosiy mato-kulrang katak
+                                                <br> O'quvchi toza va tartibli ko'rinishi kerak. QIZLARNING sochlarini bir yoki ikkita o'rash kerak.
+                                                <br> Maktabga sochlarni bo'sh qilish, kalta yubka kiyish, bluzkalartaqish taqiqlanadi. Kosmetikadan foydalanmang yoki tirnog'ingizni bo'yamang.
+                                                <br> Boshida kepka, ro'mol yoki boshqa bosh kiyim bo'lmasligi kerak. Futbolka va kalta shim kiyish taqiqlangan.
+                                                <br> Bolalarning sochlari chiroyli taralgan.
+                                                <br> Maktab kiyimlari zamonaviy modaning tendentsiyalarini aks ettirmasligi kerak (yirtilgan jinsi, kino va multfilm qahramonlari tasvirlangan kiyimlar)
+                                                <br> sirg'a, uzuk va boshqa taqinchoqlarni taqish taqiqlangan.
+                                                <br> Bitta maktab formasini kiyish hammani bir xil darajaga olib chiqadi. </p>
+                                            <div class="col-md-6 col-sm-10 offset-md-3 offset-sm-1"><img src="img/forstudents/forma.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div> -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Dars jadvali
+                            </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row schedule">
+                                        <div class="col-6"><a href="#">1 sinf</a></div>
+                                        <div class="col-6"><a href="#">2 sinf</a></div>
+                                        <div class="col-6"><a href="#">3 sinf</a></div>
+                                        <div class="col-6"><a href="#">4 sinf</a></div>
+                                        <div class="col-6"><a href="#">5 sinf</a></div>
+                                        <div class="col-6"><a href="#">6 sinf</a></div>
+                                        <div class="col-6"><a href="#">7 sinf</a></div>
+                                        <div class="col-6"><a href="#">8 sinf</a></div>
+                                        <div class="col-6"><a href="#">9 sinf</a></div>
+                                        <div class="col-6"><a href="#">10 sinf</a></div>
+                                        <div class="col-6"><a href="#">11 sinf</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                To'garaklar 
+                            </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Vaqtinchalik mavjud emas</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                Tanlovlar va musobaqalar  
+                            </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Vaqtinchalik mavjud emas </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -273,7 +321,6 @@
                     <a href="uz_contact_us.html" style="color: black; text-decoration: none; padding-left: 18px;">Biz bilan bog'lanish</a>
                 </div>
             </div>
-
         </div>
     </div>
 
