@@ -709,6 +709,9 @@ p {
         justify-content: end;
         color: red;
     }
+    .curricular .card .card-body img {
+        height: 250px !important;
+    }
 }
 
 .navbar-nav li a {
